@@ -137,7 +137,7 @@ textarea{min-height:90px;resize:vertical}
 (function(){
 var $=function(i){return document.getElementById(i)};
 var cols=['#ffd23f','#7ee8c7','#fff7f0','#3b0a45','#ff9d1c','#e0245e'];
-var DEF='Semoga hari ini penuh tawa, sehat selalu, dan semua impianmu satu per satu jadi nyata. Terima kasih sudah jadi bagian dari cerita kami.';
+var DEF='Semoga panjang umur, sehat selalu, rezeki lancar, thankyou for being the father i once only dreamed of having and always make me happy, ilysm bii';
 var DOA=['Sehat selalu dan panjang umur','Rezeki lancar, hati tenang','Semua cita-cita satu per satu terwujud','Dikelilingi orang-orang yang menyayangimu','Tahun ini lebih bahagia dari tahun lalu'];
 var BC=['#ff9d1c','#7ee8c7','#ffd23f','#fff7f0','#b58cff'];
 var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
@@ -170,7 +170,8 @@ function candles(){var n=Math.min(st.umur,9),g='',gap=n>1?Math.min(30,130/(n-1))
   '<circle class="smoke" cy="-14" r="7" fill="#fff7f0" style="animation-delay:'+d+'s"/></g>'}
  $('candles').innerHTML=g}
 function render(){var n=st.nama.trim()||'My Super Hero';
- $('who').textContent=n;$('iname').textContent=st.nama.trim()?'Ada kado untuk '+st.nama.trim()+'!':'Ada kado abii!';
+ $('who').textContent=n;$('iname').textContent=st.nama.trim()?'Ada kado untuk '+st.nama.trim()+'!':'Ada kado untuk abii
+ !';
  $('age').textContent=st.umur;$('msg').dataset.t=st.pesan.trim()||DEF;
  document.documentElement.dataset.tema=st.tema;candles();link()}
 function link(){var u=new URL(location.href.split('?')[0]);
